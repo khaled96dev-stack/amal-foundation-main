@@ -198,12 +198,9 @@ export default function About() {
                 <h4 className="mb-3 font-display text-xl font-semibold leading-tight text-[#1B2A6B]">
                   {member.name}
                 </h4>
-                <div className="font-mono text-xs font-bold uppercase tracking-widest text-[#D4A843]">
-                  <p>{member.role}</p>
-                  {member.position ? (
-                    <p className="mt-1 text-[11px] text-[#1B2A6B]">{member.position}</p>
-                  ) : null}
-                </div>
+                <p className="font-mono text-xs font-bold uppercase tracking-widest text-[#D4A843]">
+                  {member.role}
+                </p>
               </div>
             ))}
           </div>
