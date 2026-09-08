@@ -13,7 +13,7 @@ const dmMono = DM_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(SITE_URL || "https://www.amalfoundation.org"),
   ...(googleSiteVerification
     ? { verification: { google: googleSiteVerification } }
     : {}),
